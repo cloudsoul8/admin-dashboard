@@ -1,0 +1,36 @@
+main {
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 64px;
+   padding: 32px;
+}
+
+#project-container {
+   grid-row: 1 / span 2;
+}
+
+#project-item-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   gap: 128px;
+
+   margin-top: 32px;
+   margin-bottom: 32px;
+}
+
+.project-item {
+   background-color: white;
+   width: 100%;
+   border-left: 5px solid var(--accent);
+
+   padding: 16px;
+}
+
+#announcement-container {
+   background-color: white;
+}
+
+#trending-container {
+   background-color: white;
+}

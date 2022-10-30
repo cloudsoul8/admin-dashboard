@@ -1,0 +1,39 @@
+header {
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   box-shadow: 5px 0px 10px rgba(0,0,0,0.36);
+   background-color: white;
+}
+
+header > div {
+   display: grid;
+   align-items: center;
+   margin: 0px 24px;
+}
+
+#search-header {
+   grid-template-columns: 2fr 1fr;
+}
+
+#search-bar {
+   background-color: #dddddd;
+   width: 80%;
+   padding: 8px 16px;
+   border: none;
+   border-radius: 64px;
+
+}
+
+#intro-header {
+   grid-template-columns: 1fr 1fr;
+   
+}
+
+#header-button-container {
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   justify-content: center;
+   column-gap: 50px;
+}
+
+
