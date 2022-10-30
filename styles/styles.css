@@ -1,11 +1,19 @@
+:root {
+   --main-color: #FB923C;
+   --accent: #7DD3FC;
+   --bg-color: #FFF7ED;
+}
+
 body {
    display: grid;
    grid-template-columns: minmax(200px, 1fr) minmax(500px, 5fr);
-   grid-template-rows: 1fr 4fr;
+   grid-template-rows: 15% 85%;
+
+   height: 100vh;
 }
 
 #sidebar {
-   background-color: blue;
+   background-color: var(--main-color);
    grid-row: 1 / span 2;
 }
 
@@ -24,11 +32,21 @@ header {
    grid-template-columns: 1fr 1fr;
 }
 
+#header-button-container {
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   justify-content: center;
+   column-gap: 50px;
+}
+
 main {
-   background-color: aqua;
+   background-color: var(--bg-color);
    display: grid;
    grid-template-columns: 3fr 1fr;
    grid-template-rows: 1fr 1fr;
+   gap: 32px;
+
+   padding: 32px;
 }
 
 #project-container {
@@ -37,13 +55,25 @@ main {
 
 #project-item-container {
    display: grid;
-   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   gap: 32px;
+
+   margin-top: 32px;
+   margin-bottom: 32px;
+}
+
+.project-item {
+   background-color: white;
+   width: 100%;
+   border-left: 5px solid var(--accent);
+
+   padding: 16px;
 }
 
 #announcement-container {
-   
+   background-color: white;
 }
 
 #trending-container {
-   
+   background-color: white;
 }
