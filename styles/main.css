@@ -13,7 +13,7 @@ main {
 #project-item-container {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-   gap: 128px;
+   gap: 32px;
 
    margin-top: 32px;
    margin-bottom: 32px;
@@ -21,16 +21,43 @@ main {
 
 .project-item {
    background-color: white;
-   width: 100%;
    border-left: 5px solid var(--accent);
 
    padding: 16px;
+   box-shadow: 0px 4px 6px rgb(0,0,0,0.20);
+}
+
+.announcement-card, .trending-card {
+   background-color: white;
+   border: none;
+   border-radius: 8px;
+   box-shadow: 0px 4px 6px rgb(0,0,0,0.20);
+}
+
+.card-title {
+   margin-bottom: 16px;
 }
 
 #announcement-container {
-   background-color: white;
+   
+}
+
+.announcement-card {
+   padding: 16px;
+}
+
+.announcement-item {
+   padding: 16px;
 }
 
 #trending-container {
-   background-color: white;
+   
+}
+
+.trending-card {
+   padding: 8px 16px;
+}
+
+.trending-item {
+   padding: 8px;
 }
