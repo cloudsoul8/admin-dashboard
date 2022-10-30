@@ -1,0 +1,39 @@
+body {
+   display: grid;
+   grid-template-columns: minmax(200px, 1fr) minmax(500px, 5fr);
+   grid-template-rows: 1fr 4fr;
+}
+
+#sidebar {
+   background-color: blue;
+   grid-row: 1 / span 2;
+}
+
+header {
+   display:grid;
+   grid-template-rows: 1fr 1fr;
+}
+
+main {
+   background-color: aqua;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   grid-template-rows: 1fr 1fr;
+}
+
+#project-container {
+   grid-row: 1 / span 2;
+}
+
+#project-item-container {
+   display: grid;
+   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+#announcement-container {
+   
+}
+
+#trending-container {
+   
+}
