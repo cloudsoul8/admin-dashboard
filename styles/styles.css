@@ -14,7 +14,7 @@
 body {
    display: grid;
    grid-template-columns: minmax(200px, 1fr) minmax(500px, 5fr);
-   grid-template-rows: 15% 85%;
+   grid-template-rows: 17% 83%;
    background-color: var(--bg-color);
 
    height: 100vh;

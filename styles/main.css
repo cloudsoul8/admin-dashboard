@@ -74,10 +74,23 @@ main {
 
 .announcement-card {
    padding: 16px;
+   font-size: 14px;
 }
 
 .announcement-item {
    padding: 16px;
+}
+
+.announcement-title {
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 4px;
+}
+
+hr {
+   border: 1px solid #ddd;
+   margin: 0;
+   padding: 0;
 }
 
 #trending-container {
@@ -89,5 +102,17 @@ main {
 }
 
 .trending-item {
+   display: flex;
    padding: 8px;
+}
+.trending-item > img {
+   width: 48px;
+   border: solid 1px #aaa;
+   border-radius: 50%;
+   margin-right: 16px;
+}
+
+.trending-text {
+   display: grid;
+   align-items: center;
 }

@@ -24,6 +24,8 @@ li > img {
 }
 
 #logo-container {
+   display: grid;
+   align-items: center;
    font-size: 32px;
 }
 
