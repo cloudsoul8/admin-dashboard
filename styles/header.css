@@ -2,23 +2,51 @@ header {
    display: grid;
    grid-template-rows: 1fr 1fr;
    box-shadow: 5px 0px 10px rgba(0,0,0,0.36);
-   background-color: white;
+   background-color: var(--off-white);
 }
 
 header > div {
    display: grid;
    align-items: center;
-   margin: 0px 24px;
+   margin: 0px 48px;
+}
+
+#header-button-container > button {
+   background-color: #55aadd;
+   padding: 8px;
+   width: 96px;
+   border: none;
+   border-radius: 24px;
+
+   font-size: 16px;
+   font-weight: 500;
+   color: white;
+   align-self:flex-end;
 }
 
 #search-header {
    grid-template-columns: 2fr 1fr;
 }
 
+#search-bar-container {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+#search-bar-container > img {
+   width: 24px;
+   padding-right: 16px;
+}
+
+#search-bar-container > form {
+   flex: 1;
+}
+
 #search-bar {
    background-color: #dddddd;
-   width: 80%;
    padding: 8px 16px;
+   width: 70%;
    border: none;
    border-radius: 64px;
 

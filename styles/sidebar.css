@@ -1,0 +1,23 @@
+#sidebar {
+   background-color: var(--main-color);
+   grid-row: 1 / span 2;
+
+   display: grid;
+   grid-template-rows: 1fr 4fr 4fr;
+
+   font-weight: bold;
+   color: white;
+}
+
+#sidebar > * {
+   padding: 24px 32px;
+}
+
+#logo-container {
+   font-size: 32px;
+}
+
+#task-container > li, #settings-container > li {
+   padding: 16px 0px;
+   font-size: 20px;
+}
