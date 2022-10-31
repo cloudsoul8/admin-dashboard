@@ -13,6 +13,16 @@
    padding: 24px 32px;
 }
 
+li {
+   display: flex;
+   align-items: center;
+}
+
+li > img {
+   width: 24px;
+   padding-right: 16px;
+}
+
 #logo-container {
    font-size: 32px;
 }
